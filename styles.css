@@ -1,0 +1,737 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #e0e0e0; /* Light text for contrast */
+    line-height: 1.6;
+    background-color: #121212; /* Dark background */
+}
+
+/* Navbar */
+header {
+    background-color: #1e1e1e; /* Darker navbar */
+    color: #e0e0e0; /* Light text */
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1.5rem;
+}
+
+header nav ul li a {
+    color: #e0e0e0; /* Light link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff6347; /* Highlight color */
+}
+
+/* Hero Section */
+#hero {
+    padding: 6rem 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #2c3e50, #34495e); /* Dark gradient */
+    color: #e0e0e0; /* Light text */
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+#hero button {
+    background-color: #ff6347; /* Button color */
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#hero button:hover {
+    background-color: #e55339; /* Darker on hover */
+}
+
+/* Section Styling */
+section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    background: #1e1e1e; /* Dark background for sections */
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #ff6347; /* Section headings color */
+}
+
+/* About Me Section */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.info, .objective {
+    text-align: center;
+    margin: 1rem 0; /* Added margin for spacing */
+}
+
+/* Projects Section */
+.project-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    flex: 1;
+    min-width: 250px;
+    padding: 1.5rem;
+    background: #2c2c2c; /* Darker card background */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ff6347; /* Project title color */
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #ccc; /* Lighter text for description */
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.project-card button {
+    margin-top: 1rem;
+    background-color: #ff6347; /* Button color */
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.project-card button:hover {
+    background-color: #e55339; /* Darker on hover */
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    color: #ccc; /* Lighter text */
+    margin-bottom: 2rem;
+}
+
+#contact button {
+    padding: 0.8rem 1.8rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #ff6347; /* Button color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #e55339; /* Darker on hover */
+}
+
+/* Button Styling */
+button {
+    font-weight: bold;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 1rem 0;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .project-grid {
+        flex-direction: column;
+    }
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0073b1; /* LinkedIn blue */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+  
+  .button:nth-child(2) {
+    background-color: #333; /* GitHub dark gray */
+  }
+  
+  .button:hover {
+    background-color: #005582; /* Darker shade for LinkedIn */
+  }
+  
+  .button:nth-child(2):hover {
+    background-color: #222; /* Darker shade for GitHub */
+  }
+  
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 15px;
+  }
+  
+  li span {
+    display: block;
+    margin-left: 20px;
+    color: #666;
+  }
+  .objective p {
+    text-align: justify;
+  }
+  #education {
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+  }
+  
+  #education h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #ffffff;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .education-box {
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 15px 20px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .education-box ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .education-box li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #b0b0b0;
+  }
+  
+  .education-box li strong, .education-box li b {
+    color: #ffffff;
+  }
+  #projects {
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+  }
+  
+  #projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #ffffff;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .project-box {
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 15px 20px;
+    max-width: 900px; /* Increased max-width for wider boxes */
+    width: 90%; /* Adjusts to 90% of the container width for responsiveness */
+  }
+  
+  .project-box h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .project-box h4 {
+    color: #cccccc;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .project-box p {
+    color: #b0b0b0;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #4CAF50; /* Green color for the button */
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+  }
+#skills {
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  max-width: 800px; /* Increased max-width for wider boxes */
+  margin: 0 auto;
+  text-align: center;
+}
+
+#skills h2 {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.skill span {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  background-color: #444;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 20px;
+  width: 100%;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4CAF50;
+  text-align: right;
+  padding-right: 5px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px; /* Centers the text vertically */
+  border-radius: 8px 0 0 8px; /* Rounded left side only */
+}
+#skills {
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    max-width: 1000px; /* Width of the skill section */
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #skills h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+  }
+  
+  .skill span {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .progress-bar {
+    background-color: #444;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4CAF50;
+    text-align: right;
+    padding-right: 5px;
+    color: #fff; /* Ensure the text color is white for visibility */
+    font-size: 14px;
+    line-height: 20px; /* Centers the text vertically */
+    border-radius: 8px 0 0 8px; /* Rounded left side only */
+  }
+
+  #certifications {
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #certifications h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .certifications-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .certification-box {
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 15px 20px;
+    text-align: left;
+  }
+  
+  .certification-box h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .certification-box p {
+    color: #b0b0b0;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  #contact {
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .contact-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Space between buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  }
+  
+  button,
+  .social-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #4CAF50; /* Green background for buttons */
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .social-button {
+    background-color: #0077b5; /* LinkedIn color */
+    color: white;
+    text-decoration: none;
+  }
+  
+  .social-button:hover {
+    background-color: #005582; /* Darker LinkedIn color on hover */
+  }
+  
+  h2 {
+    color: #ff6347; /* Section headings color */
+  }
+  .education-box h2, .project-box h2 {
+    color: #00bcd4; /* Use a teal accent */
+  }
+  section {
+    background: linear-gradient(135deg, #1e1e1e, #333);
+  }
+.progress {
+  background-color: #4CAF50; /* Green */
+}
+.progress[data-skill="JavaScript"] {
+  background-color: #FFD700; /* Gold for JS */
+}
+.progress[data-skill="Python"] {
+  background-color: #3478F7; /* Blue for Python */
+}
+.button-primary {
+  background-color: #ff6347; /* Primary button color */
+}
+.button-secondary {
+  background-color: #00bcd4; /* Secondary button color */
+}
+.button-primary:hover {
+  background-color: #e55339;
+}
+.button-secondary:hover {
+  background-color: #008ba3;
+}
+.project-card {
+  box-shadow: 0px 4px 10px rgba(0, 200, 255, 0.4);
+  border: 1px solid #00bcd4;
+}
+.certification-box {
+  border: 1px solid #ff6347;
+  box-shadow: 0px 4px 8px rgba(255, 99, 71, 0.5);
+}
+.social-button.linkedin {
+  background-color: #0077b5; /* LinkedIn */
+}
+.social-button.github {
+  background-color: #333; /* GitHub */
+}
+.social-button.linkedin:hover {
+  background-color: #005582;
+}
+.social-button.github:hover {
+  background-color: #222;
+}
+section:hover {
+  transform: scale(1.02); /* Slightly enlarges section on hover */
+  box-shadow: 0px 6px 20px rgba(0, 200, 255, 0.3); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+header nav ul li a:hover {
+  color: #00bcd4; /* Change to a teal or complementary color */
+  border-bottom: 2px solid #00bcd4; /* Adds an underline */
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+button:hover, .button:hover {
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0px 8px 15px rgba(255, 99, 71, 0.3); /* Soft glow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card:hover {
+  background-color: #3a3a3a; /* Darken on hover */
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 200, 255, 0.4);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-img:hover {
+  transform: rotate(3deg) scale(1.05); /* Slight rotation and scale */
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 200, 255, 0.5);
+}
+.progress:hover {
+  box-shadow: 0px 0px 10px #4CAF50, 0px 0px 20px rgba(76, 175, 80, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+.education-box:hover, .certification-box:hover {
+  transform: scale(1.03);
+  border-color: #ff6347; /* Highlight border color */
+  box-shadow: 0px 6px 15px rgba(255, 99, 71, 0.5); /* Add shadow effect */
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+h2:hover {
+  color: #00bcd4; /* Accent color change */
+  text-shadow: 0px 0px 10px rgba(0, 200, 255, 0.7);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.social-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 10px rgba(0, 200, 255, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.progress {
+  position: relative;
+  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  overflow: hidden;
+}
+
+.progress::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 20%, transparent 20%) center/25px 25px;
+  animation: moveBubbles 2s linear infinite;
+}
+
+@keyframes moveBubbles {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(100%);
+  }
+}
+/* General Section Styling for Wider Layout */
+section {
+  padding: 4rem 2rem;
+  max-width: 1200px; /* Increased max-width for wider sections */
+  margin: 2rem auto;
+  background: linear-gradient(135deg, #1e1e1e, #333);
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Education Section */
+#education {
+  max-width: 1200px; /* Wider width for education section */
+}
+
+/* Projects Section */
+#projects {
+  max-width: 1200px; /* Wider width for projects section */
+}
+
+/* Skills Section */
+#skills {
+  max-width: 1200px; /* Wider width for skills section */
+}
+
+/* Certifications Section */
+#certifications {
+  max-width: 1200px; /* Wider width for certifications section */
+}
+
+/* Contact Section */
+#contact {
+  max-width: 1200px; /* Wider width for contact section */
+}
+
+/* Button and Hover Adjustments */
+.button-primary,
+.button-secondary,
+.project-card button,
+.contact-buttons button,
+.social-button {
+  max-width: 200px; /* Increase width if desired */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 1400px) {
+  /* Responsive Adjustment */
+  section {
+      max-width: 95%; /* Full width for medium screens */
+  }
+}
+
+
